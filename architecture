@@ -1,0 +1,11 @@
+Series
+Show -> Video, Series
+Commercial -> Video
+Schedule Blocks -> ScheduleId
+    Time
+    Show or set of shows
+
+Schedule block has a method to get the right video to play currently
+needs to pick a show at each block, determine how long it is and whether it should pick 2 or more and how many commercials it needs to fill in
+
+
