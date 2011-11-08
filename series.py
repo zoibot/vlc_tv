@@ -1,7 +1,7 @@
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Blob, ForeignKey
+from sqlalchemy.orm import relationship
+from sqlalchemy import Column, Integer, String, LargeBinary, ForeignKey
 
-Base = declarative_base()
+from base import Base
 
 from episode import Episode
 
@@ -13,4 +13,4 @@ class Series(Base):
     seasons = Column(Integer)
     start_year = Column(Integer)
     end_year = Column(Integer)
-    image = Column(Blob)
+    image = Column(LargeBinary)
